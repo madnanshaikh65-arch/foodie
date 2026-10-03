@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="./favicon/icons8-call-50.png" type="image/x-icon">
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(./images/backg.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 76px;
+    background-color: #333;
+    z-index: 1000;
+}
+        
+
+        .logo {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            color: orange;
+        }
+        
+
+         .content {
+            margin-left: 220px;
+            width: calc(100% - 220px);
+            padding: 40px;
+        }
+
+        .content h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 50px;
+            font-weight: bolder;
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+       
+        .contact-container {
+            display: flex;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .contact-info,
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .contact-info {
+            width: 40%;
+        }
+
+        .contact-form {
+            width: 60%;
+        }
+
+        .contact-info h2,
+        .contact-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            color: #555;
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .contact-form button {
+            background-color: #222;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: orange;
+        }
+
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: orange;
+}
+        </style>
+           
+
+    
+</head>
+<body>
+  <nav>
+        <div class="logo">FOODIE</div>
+
+        <div class="menu">
+            <a href="./index.html">HOME</a>
+            <a href="./menu.html">MENU</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./contact.html">CONTACT</a>
+            <a href="./login.html">LOGIN</a>
+        </div>
+    </nav>
+    <div class="content">
+
+            <h1>CONTACT US</h1>
+
+            <p class="subtitle">
+                We would love to hear from you!
+            </p>
+
+
+            <div class="contact-container">
+
+                
+                <div class="contact-info">
+
+                    <h2>Get In Touch</h2>
+
+                    <p>
+                         <b>Address:</b><br>
+                        Main Food Street, Karachi, Pakistan
+                    </p>
+
+                    <p>
+                         <b>Phone:</b><br>
+                        +92 300 1234567
+                    </p>
+
+                    <p>
+                         <b>Email:</b><br>
+                        info@foodie.com
+                    </p>
+
+                    <p>
+                         <b>Opening Hours:</b><br>
+                        Monday - Sunday<br>
+                        11:00 AM - 11:00 PM
+                    </p>
+
+                </div>
+
+
+           
+                <div class="contact-form">
+
+                    <h2>Send Us a Message</h2>
+
+                    <form>
+
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Enter your name">
+
+                        <label>Your Email</label>
+                        <input type="email" placeholder="Enter your email">
+
+                        <label>Subject</label>
+                        <input type="text" placeholder="Enter subject">
+
+                        <label>Message</label>
+                        <textarea placeholder="Write your message"></textarea>
+
+                        <button type="submit">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+               
+
+            <footer class="footer">
+                <h2>Delicious Food</h2>
+
+                <p>
+                    Delicious food, fresh taste and quality service.
+                </p>
+
+                <div>
+                    <a href="./index.html">Home</a>
+                    <a href="./menu.html">Menu</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+
+                <p>
+                    © 2026 Delicious Food. All Rights Reserved.
+                </p>
+            </footer>
+
+        </div>
+    </div>
+    </body>
+</html>

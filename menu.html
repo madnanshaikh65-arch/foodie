@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="shortcut icon" href="./favicon/icons8-menu-squared-50.png" type="image/x-icon">
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("./food-background.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+          nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 76px;
+    background-color: #333;
+    z-index: 1000;
+}
+        
+
+        .logo {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            color: orange;
+        }
+.sidebar {
+    position: fixed;
+    top: 76px;
+    left: 0;
+    width: 252px;
+    height: calc(100vh - 76px);
+    background-color: #222;
+    padding: 30px 20px;
+    z-index: 999;
+   
+}
+
+        .sidebar h2 {
+            color:white;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 30px;
+        }
+
+        .sidebar a:hover {
+            background-color: orange;
+            color: black;
+        }
+
+       .content{
+            
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+           margin-left: 252px;
+    padding: 100px 25px 25px;
+       }
+       .cards {
+         display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+       
+        }
+
+        .card {
+            width: 250px;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 5px 15px gray;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            margin: 15px 0 8px;
+        }
+
+        .card p {
+            color: gray;
+            padding: 0 10px;
+        }
+
+        .price {
+            color: orange;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 15px;
+        }
+
+        .btn {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+       
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: orange;
+}
+
+           
+
+    </style>
+</head>
+<body>
+  <nav>
+        <div class="logo">FOODIE</div>
+
+        <div class="menu">
+            <a href="./index.html">HOME</a>
+            <a href="./menu.html">MENU</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./contact.html">CONTACT</a>
+            <a href="./login.html">LOGIN</a>
+        </div>
+    </nav>
+     <div class="sidebar">
+        <h2>FOOD MENU</h2>
+
+        <a href="./menu.html"> Pizza</a>
+        <a href="./menu.html"> Burgers</a>
+        <a href="./menu.html"> Pasta</a>
+        <a href="./menu.html"> Chicken</a>
+        <a href="./menu.html"> Salad</a>
+        <a href="./menu.html"> Desserts</a>
+        <a href="./menu.html"> Drinks</a>
+    </div>
+    
+    <div class="content">
+        <h1>WELCOME TO FOODIE</h1>
+        <p>Delicious Food, Fresh Taste</p>
+    </div>
+   
+    
+     <div class="cards">
+
+        
+        <div class="card">
+            <img src="./images/pizza.jfif" alt="Pizza">
+
+            <h2>Cheese Pizza</h2>
+
+            <p>Delicious cheesy pizza with fresh toppings.</p>
+
+            <div class="price">Rs. 899</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+
+
+        <div class="card">
+            <img src="./images/burger.jfif" alt="Burger">
+
+            <h2>Chicken Burger</h2>
+
+            <p>Fresh chicken burger with crispy fries.</p>
+
+            <div class="price">Rs. 599</div>
+
+           <a href="./contact.html"><button class="btn">Order Now</button></a> 
+        </div>
+
+
+      
+        <div class="card">
+            <img src="./images/pasta.jfif" alt="Pasta">
+
+            <h2>Italian Pasta</h2>
+
+            <p>Creamy pasta with delicious Italian flavors.</p>
+
+            <div class="price">Rs. 699</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+
+          <div class="card">
+            <img src="./images/tikka.jfif" alt="Chicken Tikka">
+
+            <h2>Chicken Tikka</h2>
+
+            <p>Juicy and flavorful chicken tikka marinated and grilled to perfection.</p>
+
+            <div class="price">Rs. 699</div>
+
+            <a href="./contact.html"></a><button class="btn">Order Now</button>
+        </div>
+
+         <div class="card">
+            <img src="./images/kabab.jfif" alt="Chicken Tikka">
+
+            <h2>Chicken Seekh Kabab</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+
+                <div class="card">
+            <img src="./images/pizza.jfif" alt="Pizza">
+
+            <h2>Cheese Pizza</h2>
+
+            <p>Delicious cheesy pizza with fresh toppings.</p>
+
+            <div class="price">Rs. 899</div>
+
+          <a href="./contact.html"><button class="btn">Order Now</button></a> 
+        </div>
+
+
+        
+        <div class="card">
+            <img src="./images/kabab.jfif" alt="Chicken Tikka">
+
+            <h2>Chicken Seekh Kabab</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+           <a href="./contact.html"><button class="btn">Order Now</button></a> 
+        </div>
+
+       
+         <div class="card">
+            <img src="./images/nuggets.jfif" alt="Chicken Tikka">
+
+            <h2>Chicken Nuggets</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+           <a href="./contact.html"><button class="btn">Order Now</button></a> 
+        </div>
+         <div class="card">
+            <img src="./images/kabab.jfif" alt="Chicken Tikka">
+
+            <h2>Chicken Seekh Kabab</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+         <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+
+         <div class="card">
+            <img src="./images/coffee.jfif" alt="coffee">
+
+            <h2>Espresso Coffee</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+         <div class="card">
+            <img src="./images/cpa.jfif" alt="coffee">
+
+            <h2>Capachino Coffee</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+
+         <div class="card">
+            <img src="./images/cold.jfif" alt="cold coffee">
+            <h2>Cold Coffee</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+
+
+         <div class="card">
+            <img src="./images/kabab.jfif" alt="Chicken Tikka">
+
+            <h2>Chicken Seekh Kabab</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+
+         <div class="card">
+            <img src="./images/apple.jfif" alt="coffee">
+
+            <h2>Apple Juice</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+         <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+         <div class="card">
+            <img src="./images/kiwi.jfif" alt="coffee">
+
+            <h2>Kiwi Juice</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+
+         <div class="card">
+            <img src="./orange.jfif" alt="cold coffee">
+
+            <h2>Orange Juice</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+
+          <div class="card">
+            <img src="./images/kabab.jfif" alt="Chicken Tikka">
+
+            <h2>Chicken Seekh Kabab</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+            <a href="./contact.html"></a><button class="btn">Order Now</button>
+        </div>
+
+         <div class="card">
+            <img src="./images/straberry.jfif" alt="coffee">
+
+            <h2>Strawberry Icecream</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+         <div class="card">
+            <img src="./images/choco.jfif" alt="coffee">
+
+            <h2>Chocolate Icecream</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+
+         <div class="card">
+            <img src="./images/ice coffee.jfif" alt="cold coffee">
+
+            <h2>Coffee Icecream</h2>
+
+            <p>Juicy  perfectly grilled with aromatic spices for a delicious smoky taste.</p>
+
+            <div class="price">Rs. 599</div>
+
+            <a href="./contact.html"><button class="btn">Order Now</button></a>
+        </div>
+    
+                  </div>
+          
+            <footer class="footer">
+                <h2>Delicious Food</h2>
+
+                <p>
+                    Delicious food, fresh taste and quality service.
+                </p>
+
+                <div>
+                    <a href="./index.html">Home</a>
+                    <a href="./menu.html">Menu</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+
+                <p>
+                    © 2026 Delicious Food. All Rights Reserved.
+                </p>
+            </footer>
+
+        </div>
+    </div>
+</body>
+</html>
